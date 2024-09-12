@@ -1,0 +1,12 @@
+name: Manual Trigger Workflow
+
+on:
+    workflow_dispatch:
+
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+
+        steps:
+        - run: echo "Step 1 Complete!"
+        - run: echo "Step 2 Complete!"
