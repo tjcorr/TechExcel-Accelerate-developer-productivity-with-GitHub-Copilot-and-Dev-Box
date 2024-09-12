@@ -10,3 +10,13 @@ jobs:
         steps:
         - run: echo "Step 1 Complete!"
         - run: echo "Step 2 Complete!"
+    job2:
+        runs-on: ubuntu-latest
+
+        steps:
+        # run Cowsays action from marketplace
+        - name: Cowsay
+          uses: mscoutermarsh/cowsays-action@master
+          with:
+            text: 'Ready for prod-ship it!'
+            color: 'magenta'
